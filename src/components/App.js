@@ -8,10 +8,16 @@ function App(){
 
   const [theme, setTheme]= useState(themes.light);
 
+  function toggleTheme(){
+    setTheme(theme=>
+      theme.textColor === "AntiqueWhite" ? themes.light : themes.dark  
+    );
+  }
+
   return (
     <ThemeContex.Provider value={theme}>
       <Header />
-      <ToggleTheme />
+      <ToggleTheme toggleTheme={toggleTheme} />
       <TicketControl />
     </ThemeContex.Provider>
   );
