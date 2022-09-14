@@ -2,14 +2,18 @@ import React from "react";
 import Header from "./Header";
 import TicketControl from "./TicketControl";
 import ToggleTheme from "./ToggleTheme";
+import { ThemeContex, themes } from "../context/theme-context";
 
 function App(){
+
+  const [theme, setTheme]= useState(themes.light);
+
   return (
-    <React.Fragment>
+    <ThemeContex.Provider value={theme}>
       <Header />
       <ToggleTheme />
       <TicketControl />
-    </React.Fragment>
+    </ThemeContex.Provider>
   );
 }
 
