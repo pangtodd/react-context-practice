@@ -4,7 +4,7 @@ function ToggleTheme(){
   return(
     <React.Fragment>
       <button>Toggle theme</button>
-      <hr/>
+      {/* <hr/> */}
     </React.Fragment>
   );
 }

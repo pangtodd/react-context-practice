@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const theme = {
+export const themes = {
   light: {
     backgroundColor: "AntiqueWhite",
     textColor: "DarkSlateGrey",
-    buttonBackground: "Lavender",
+    buttonBackground: "Lavender", 
     inputBackground: "Gainsboro"
   },
   dark: {
