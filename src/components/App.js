@@ -20,9 +20,9 @@ function App(){
   return (
     <ThemeContext.Provider value={theme}>
       <Header />
-      <ThemeContext.Content.Consumer>
+      <ThemeContext.Consumer>
         {contextTheme=> <ToggleTheme theme={contextTheme} toggleTheme={toggleTheme}/>}
-      </ThemeContext.Content.Consumer>
+      </ThemeContext.Consumer>
       <TicketControl />
     </ThemeContext.Provider>
   );
